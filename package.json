@@ -1,0 +1,24 @@
+{
+  "name": "nasa-root",
+  "version": "1.0.0",
+  "description": "root-level npm package",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm install-server && npm run install-client ",
+    "server": "npm run watch --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "npm run server & npm run client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "test": "npm run test --prefix server && npm  test --prefix client",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoos": "^0.0.1-security",
+    "mongoose": "^6.8.0"
+  }
+}

@@ -4,7 +4,7 @@
   "description": "root-level npm package",
   "main": "index.js",
   "scripts": {
-    "install-server": "npm install --prefix server",
+    "install-server": "npm install server",
     "install-client": "npm install --prefix client",
     "install": "npm run install-server && npm run install-client",
     "server": "npm run watch --prefix server",

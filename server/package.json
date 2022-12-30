@@ -4,11 +4,11 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "test": "jest ",
+    "test": "jest --detectOpenHandles",
     "test-watch": "jest --watch",
     "watch": "nodemon src/server.js",
     "start": "node src/server.js",
-    "cluster": "pm2 start src/server.js -i max "
+    "cluster": "pm2 start src/server.js -i max"
   },
   "keywords": [],
   "author": "",
